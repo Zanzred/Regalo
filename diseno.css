@@ -1,24 +1,7 @@
-@media 
 body{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-}
-
-h1{
-    font-family: 'Fuzzy Bubbles', sans-serif;
-    font-style: oblique;
-    font-size: 80px;
-    font-weight: bold;
-    text-align: center;
-    margin-top: 15px;
-    color: rgb(177, 82, 50);
-    position: absolute;
-    left: 46%;
-    top: 9%;
-}
-
-body{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     margin: 0;
     padding: 0;
@@ -28,24 +11,86 @@ body{
 .Patio{
     margin: 0;
     padding: 0;
-    width: 100%;
-    height: 100%;
+    width:100%;
+    height:100%;
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
     /*   background-image:image(Backyard.jpg);*/
 }
 
+@media screen and (min-width: 400px) and (max-width: 1440px){
+
+    .Patio img{
+        /*width:100%;
+        height:100%; originales*/
+        width:750px;
+        height:1184px;
+    }
+
+    .titulo h1{
+        font-family: 'Fuzzy Bubbles', sans-serif;
+        font-style: oblique;
+        font-size:380%;
+        font-weight: bold;
+        text-align: center;
+        margin-top: 15px;
+        color: rgb(177, 82, 50);
+        position: absolute;
+        left: 67%;
+        top: 11%;
+    }
+
+    .Carta img{
+        width: 600px;
+        height:735px;
+        position: absolute;
+        left: 28%;
+        top: 4%;
+    }
+    
+    .poema p{
+        font-style: normal;
+        font-family: 'Fuzzy Bubbles', sans-serif;
+        position: absolute;
+        left: 34%;
+        top: 21%;
+        font-size: 84%;
+    }
+    
+    .Ramo img{
+        width: 370px;
+        height:250px;
+        position: absolute;
+        left: 43%;
+        top: 85%;
+    }
+
+}
+
 .Patio img{
-    width: 100%;
-    height:100%;
+    width:750px;
+    height:1184px;
+}
+
+.titulo h1{
+    font-family: 'Fuzzy Bubbles', sans-serif;
+    font-style: oblique;
+    font-size: 380%;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 15px;
+    color: rgb(177, 82, 50);
+    position: absolute;
+    left: 67%;
+    top: 11%;
 }
 
 .Carta img{
-    width: 1000px;
-    height:950px;
+    width: 600px;
+    height:735px;
     position: absolute;
-    left: 28%;
+    left: 23%;
     top: 4%;
 }
 
