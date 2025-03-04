@@ -20,8 +20,8 @@ body{
 @media screen and (max-width: 1440px){
     /*Hecho*/
     .Patio img{
-        width: 100vw;
-        height:100vh;
+        min-width: 100vw;
+        min-height:100vh;
     }
 
     /*hecho*/
