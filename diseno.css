@@ -17,13 +17,13 @@ body{
     flex-wrap: wrap;
 }
 
-@media screen and (min-width: 400px) and (max-width: 1440px){
-
-    /*hecho*/
-    .Patio img{ 
-        width:750px;
-        height:1184px;
+@media screen and (max-width: 1440px){
+    /*Hecho*/
+    .Patio img{
+        width: 100vw;
+        height:100vh;
     }
+
     /*hecho*/
     .titulo h1{
         font-family: 'Fuzzy Bubbles', sans-serif;
@@ -37,24 +37,33 @@ body{
         left: 50%;
         top: 11%;
     }
-    /*hecho*/
-    .Carta img{
-        width: 430px;
-        height:1100px;
-        position: absolute;
-        left: 17%;
-        top: 4%;
+
+    .Carta{
+
+        display: flex;
+        flex-wrap: wrap;
+
     }
-    /*Hecho*/
+
+    /*Falta*/
+    .Carta img{
+        width: 100vw;
+        height:100vh;
+        position: absolute;
+        left: 16%;
+        top: 4%;
+        flex: 1;
+    }
+    /*Falta*/
     .poema p{
         font-style: normal;
         font-family: 'Fuzzy Bubbles', sans-serif;
         position: absolute;
         left: 34%;
         top: 21%;
-        font-size: 73%;
+        font-size: clamp(6px, 2vw, 16px);
     }
-    /*Hecho*/
+    /*Falta*/
     .Ramo img{
         width: 45%;
         height:20%;
@@ -80,23 +89,32 @@ body{
     color: rgb(177, 82, 50);
     position: absolute;
     left: 46%;
-    top: 9%;
+    top: 7%;
+}
+
+.Carta{
+
+    display: flex;
+    flex-wrap: wrap;
+
 }
 
 .Carta img{
-    width: 1000px;
-    height:950px;
+    width: 80vw;
+    height:100vh;
     position: absolute;
-    left: 28%;
-    top: 4%;
+    left: 18%;
+    top: 2%;
+    flex:1;
 }
 
 .poema p{
     font-style: normal;
     font-family: 'Fuzzy Bubbles', sans-serif;
     position: absolute;
-    left: 34%;
-    top: 21%;
+    left: 22%;
+    top: 19%;
+    font-size: 6px;
 }
 
 .Ramo img{
@@ -104,5 +122,32 @@ body{
     height:250px;
     position: absolute;
     left: 43%;
-    top: 85%;
+    top: 83%;
 }
+
+/*
+CARTA
+    width: 1000px;
+    height:950px;
+    position: absolute;
+    left: 28%;
+    top: 2%;
+*/
+
+/*
+Poema
+    font-style: normal;
+    font-family: 'Fuzzy Bubbles', sans-serif;
+    position: absolute;
+    left: 34%;
+    top: 19%;
+*/
+
+/*
+Ramo
+    width: 370px;
+    height:250px;
+    position: absolute;
+    left: 43%;
+    top: 83%;
+*/
