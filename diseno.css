@@ -5,7 +5,6 @@ body{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     margin: 0;
     padding: 0;
-    /*background-color: crimson;*/
 }
 
 .Patio{
@@ -16,18 +15,16 @@ body{
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    /*   background-image:image(Backyard.jpg);*/
 }
 
 @media screen and (min-width: 400px) and (max-width: 1440px){
 
-    .Patio img{
-        /*width:100%;
-        height:100%; originales*/
+    /*hecho*/
+    .Patio img{ 
         width:750px;
         height:1184px;
     }
-
+    /*hecho*/
     .titulo h1{
         font-family: 'Fuzzy Bubbles', sans-serif;
         font-style: oblique;
@@ -37,60 +34,60 @@ body{
         margin-top: 15px;
         color: rgb(177, 82, 50);
         position: absolute;
-        left: 67%;
+        left: 50%;
         top: 11%;
     }
-
+    /*hecho*/
     .Carta img{
-        width: 600px;
-        height:735px;
+        width: 430px;
+        height:1100px;
         position: absolute;
-        left: 28%;
+        left: 17%;
         top: 4%;
     }
-    
+    /*Hecho*/
     .poema p{
         font-style: normal;
         font-family: 'Fuzzy Bubbles', sans-serif;
         position: absolute;
         left: 34%;
         top: 21%;
-        font-size: 84%;
+        font-size: 73%;
     }
-    
+    /*Hecho*/
     .Ramo img{
-        width: 370px;
-        height:250px;
+        width: 45%;
+        height:20%;
         position: absolute;
         left: 43%;
-        top: 85%;
+        top: 113%;
     }
 
 }
 
 .Patio img{
-    width:750px;
-    height:1184px;
+    width: 100%;
+    height:100%;
 }
 
 .titulo h1{
     font-family: 'Fuzzy Bubbles', sans-serif;
     font-style: oblique;
-    font-size: 380%;
+    font-size: 80px;
     font-weight: bold;
     text-align: center;
     margin-top: 15px;
     color: rgb(177, 82, 50);
     position: absolute;
-    left: 67%;
-    top: 11%;
+    left: 46%;
+    top: 9%;
 }
 
 .Carta img{
-    width: 600px;
-    height:735px;
+    width: 1000px;
+    height:950px;
     position: absolute;
-    left: 23%;
+    left: 28%;
     top: 4%;
 }
 
