@@ -45,14 +45,14 @@ body{
 
     }
 
-    /*Falta*/
+    /*Hecho*/
     .Carta img{
         min-width: 90vw;
         max-width: 90vw;
         min-height:90vh;
         max-height: 90vh;
         position: absolute;
-        left: 4%;
+        left: 2%;
         top: 2%;
         flex: 1;
     }
@@ -65,7 +65,7 @@ body{
         top: 19%;
         font-size: clamp(6px, 2vw, 16px);
     }
-    /*Falta*/
+    /*Hecho*/
     .Ramo img{
         min-width: 35%;
         max-width: 35%;
@@ -73,7 +73,7 @@ body{
         max-height: 30%;
         position: absolute;
         left: 35%;
-        top:72%;
+        top:70%;
     }
 
 }
