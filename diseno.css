@@ -52,7 +52,7 @@ body{
         min-height:90vh;
         max-height: 90vh;
         position: absolute;
-        left: 2%;
+        left: 1%;
         top: 2%;
         flex: 1;
     }
@@ -73,7 +73,7 @@ body{
         max-height: 30%;
         position: absolute;
         left: 35%;
-        top:70%;
+        top:67%;
     }
 
 }
