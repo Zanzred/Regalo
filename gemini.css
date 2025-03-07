@@ -1,0 +1,160 @@
+body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.Patio {
+    width: 100%;
+    height: 100vh; /* Use vh for full viewport height */
+    display: flex;
+    justify-content: center; /* Center the content horizontally */
+    align-items: center; /* Center the content vertically */
+    flex-wrap: wrap; /* Allow content to wrap to new lines */
+    position: relative; /* Needed for absolute positioning within */
+}
+
+.Patio img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Cover the entire container without distortion */
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1; /* Place the background image behind other content */
+}
+
+.titulo h1 {
+    font-family: 'Fuzzy Bubbles', sans-serif;
+    font-style: oblique;
+    font-weight: bold;
+    text-align: center;
+    color: rgb(177, 82, 50);
+    position: absolute;
+    bottom: 70%; /* Adjusted for more consistent positioning */
+    left: 50%;
+    transform: translateX(-50%); /* Center horizontally using transform */
+    font-size: 5vw; /* Responsive font size */
+    z-index: 10;
+}
+
+.Carta {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 90vw;
+    max-width: 800px; /* Prevent it from getting too wide */
+    height: 90vh;
+    max-height: 700px;
+    position: relative;
+    margin: auto;
+}
+
+.Carta img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    position: static;
+    
+}
+
+.poema {
+    display: flex;
+    flex-wrap: wrap;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    justify-content: center;
+    position: absolute;
+    top: 20%;
+    left: 10%;
+    width: 80%;
+    height: 60%;
+    overflow-y: scroll;
+    padding: 10px;
+    
+}
+
+.poema p {
+    font-style: normal;
+    font-family: 'Fuzzy Bubbles', sans-serif;
+    font-size: clamp(10px, 1.5vw, 16px); /* Responsive font size */
+    line-height: 1.4;
+    
+}
+
+.Ramo img {
+    width: 40%; /* Relative width */
+    max-width: 250px; /* Prevent it from getting too big */
+    height: auto;
+    position: absolute;
+    /*bottom: 90%; /* Position at the bottom */
+    top: 80%;
+    left: 50%;
+    transform: translateX(-50%); /* Center horizontally */
+}
+
+/* Media Queries */
+@media screen and (max-width: 1024px) {
+  .titulo h1 {
+        font-size: 7vw;
+    }
+  .poema{
+      width: 90%;
+      left: 5%;
+      font-size: 10px;
+  }
+
+  .Ramo img{
+      width: 60%;
+  }
+
+}
+
+@media screen and (max-width: 768px) {
+
+    .titulo h1 {
+        font-size: 8vw;
+        top: 3%;
+    }
+    .Carta{
+        width: 95vw;
+        height: 85vh;
+    }
+
+    .poema{
+        width: 95%;
+        height: 70%;
+        left: 2.5%;
+        top: 10%;
+    }
+
+    .Ramo img{
+        width: 70%;
+        bottom: 5%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .titulo h1 {
+        font-size: 10vw;
+    }
+
+    .Carta{
+        width: 98vw;
+        height: 80vh;
+    }
+
+    .poema{
+        width: 98%;
+        height: 75%;
+        left: 1%;
+        top: 8%;
+    }
+
+    .Ramo img{
+        width: 80%;
+        bottom: 3%;
+    }
+}
