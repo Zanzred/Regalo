@@ -37,7 +37,7 @@ body{
     color: rgb(177, 82, 50);
     position: absolute;
     left: 35%;
-    top: 3%;
+    top: 2%;
 }
 
 .Carta{
@@ -69,7 +69,7 @@ body{
     overflow-wrap: break-word;
     justify-content: center;
     position: absolute;
-    top: 15%;
+    top: 13%;
     left: 1%;
     width: 100%;
     height: 100%;
@@ -103,7 +103,7 @@ body{
     
     .poema{
     
-        width: 90%;
+        width: 90vw;
         left: 5%;
         font-size: 10px;
     
@@ -130,7 +130,7 @@ body{
     
     .poema{
     
-        width: 95%;
+        width: 95vw;
         height: 70%;
         left: 2.5%;
         top: 10%;
@@ -148,6 +148,7 @@ body{
 @media screen and (max-width: 480px){
 .titulo h1{
     font-size: 10vw;
+    top: 5%;
 }
    
 .Carta{
@@ -157,16 +158,16 @@ body{
 
 .poema{
 
-    width: 98%;
+    width: 95vw;
     height: 75%;
-    left: 1%;
-    top: 8%;
+    left: 2%;
+    top: 10%;
 
 }
 
 .Ramo{
     width: 80%;
-    top: 95%;
+    top: 90%;
 }
 
 }
