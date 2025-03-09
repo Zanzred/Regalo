@@ -3,112 +3,63 @@ body{
     margin: 0;
     padding: 0;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    margin: 0;
-    padding: 0;
 }
 
 .Patio{
     margin: 0;
     padding: 0;
     width:100%;
-    height:100%;
+    height:100vh;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    align-items: center;
+    position: relative;
     flex-wrap: wrap;
-}
-
-@media screen and (max-width: 1440px){
-    /*Hecho*/
-    .Patio img{
-        min-width: 100vw;
-        min-height:100vh;
-    }
-
-    /*hecho*/
-    .titulo h1{
-        font-family: 'Fuzzy Bubbles', sans-serif;
-        font-style: oblique;
-        font-size:380%;
-        font-weight: bold;
-        text-align: center;
-        margin-top: 15px;
-        color: rgb(177, 82, 50);
-        position: absolute;
-        left: 25%;
-        top: 4%;
-    }
-
-    .Carta{
-
-        display: flex;
-        flex-wrap: wrap;
-
-    }
-
-    /*Hecho*/
-    .Carta img{
-        min-width: 90vw;
-        max-width: 90vw;
-        min-height:90vh;
-        max-height: 90vh;
-        position: absolute;
-        left: 1%;
-        top: 2%;
-        flex: 1;
-    }
-    /*Hecho*/
-    .poema p{
-        font-style: normal;
-        font-family: 'Fuzzy Bubbles', sans-serif;
-        position: absolute;
-        left: 10%;
-        top: 19%;
-        font-size: clamp(6px, 2vw, 16px);
-    }
-    /*Hecho*/
-    .Ramo img{
-        min-width: 35%;
-        max-width: 35%;
-        min-height: 30%;
-        max-height: 30%;
-        position: absolute;
-        left: 35%;
-        top:67%;
-    }
-
 }
 
 .Patio img{
     width: 100%;
     height:100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
 }
 
 .titulo h1{
     font-family: 'Fuzzy Bubbles', sans-serif;
     font-style: oblique;
-    font-size: 80px;
+    font-size: 5vw;
     font-weight: bold;
     text-align: center;
     margin-top: 15px;
     color: rgb(177, 82, 50);
     position: absolute;
-    left: 46%;
-    top: 7%;
+    left: 35%;
+    top: 3%;
 }
 
 .Carta{
 
     display: flex;
     flex-wrap: wrap;
-
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin: auto;
+    width: 90vw;
+    max-width: 1000px;
+    height: 90vh;
+    max-height: 950px;
+    top: -5%;
 }
 
 .Carta img{
-    width: 1000px;
-    height:950px;
-    position: absolute;
-    left: 28%;
-    top: 2%;
+    width: 100%;
+    height: 100%;
+    position: static;
+    object-fit: fill;
 }
 
 .poema{
@@ -117,22 +68,107 @@ body{
     word-wrap: break-word;
     overflow-wrap: break-word;
     justify-content: center;
+    position: absolute;
+    top: 15%;
+    left: 1%;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
 }
 
 .poema p{
     font-style: normal;
     font-family: 'Fuzzy Bubbles', sans-serif;
     position: absolute;
-    left: 34%;
-    top: 19%;
+    font-size: clamp(10px, 1.5vw, 16px);
 }
 
 .Ramo img{
-    width: 370px;
-    height:250px;
+    width: 40%;
+    max-width: 340px;
+    height: 40%;
+    max-height:220px;
     position: absolute;
     left: 43%;
-    top: 83%;
+    top: 87%;
+    transform: translateX(-30%);
+}
+
+/*compu*/
+@media screen and (max-width: 1024px){
+
+    .titulo h1{
+        font-size: 7vw;
+    }
+    
+    .poema{
+    
+        width: 90%;
+        left: 5%;
+        font-size: 10px;
+    
+    }
+    
+    .Ramo{
+        width: 60%;
+    }
+
+}
+
+/*tablet*/
+@media screen and (max-width: 768px){
+
+    .titulo h1{
+        font-size: 8vw;
+        top: 3%;
+    }
+       
+    .Carta{
+        width: 95vw;
+        height: 70vh;
+    }
+    
+    .poema{
+    
+        width: 95%;
+        height: 70%;
+        left: 2.5%;
+        top: 10%;
+    
+    }
+    
+    .Ramo{
+        width: 70%;
+        top: 93%;
+    }
+    
+}
+
+/*telefono*/
+@media screen and (max-width: 480px){
+.titulo h1{
+    font-size: 10vw;
+}
+   
+.Carta{
+    width: 98vw;
+    height: 90vh;
+}
+
+.poema{
+
+    width: 98%;
+    height: 75%;
+    left: 1%;
+    top: 8%;
+
+}
+
+.Ramo{
+    width: 80%;
+    top: 95%;
+}
+
 }
 
 /*
